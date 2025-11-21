@@ -3,7 +3,7 @@
 
 ## 🧠 Deskripsi Singkat
 Sistem ini dirancang untuk membaca kedalaman AUV secara real-time menggunakan sensor tekanan SEN0257. Pembacaan sensor diproses melalui:
-
+---
 - **ADC Averaging (noise reduction)
 - **Kalman Filter (filtering adaptif)
 - **Moving Average (smoothing tambahan)
@@ -11,3 +11,4 @@ Sistem ini dirancang untuk membaca kedalaman AUV secara real-time menggunakan se
 - **Konversi Tegangan → Tekanan → Kedalaman
 - **Koreksi Linear Regression (y = m·x + c) hasil kalibrasi offline
 - **Output akhir berupa kedalaman dalam cm, stabil dan siap digunakan untuk kontrol PID depth-hold.
+---
