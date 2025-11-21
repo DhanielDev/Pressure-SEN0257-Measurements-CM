@@ -21,21 +21,3 @@ Pressure_System/
 └── /docs                 # (opsional) Dokumentasi tambahan / grafik pengujian
 
 ```
-
-## ⚙️ Komponen Sistem
-🧩 1. Sensor & ADC
-<div style="margin-left:20px">
-Sensor:
-• SEN0257 Water Pressure Sensor
-Pin Input:
-• PA2 (STM32 ADC)
-Konfigurasi ADC:
-• VREF: 3.2V
-• Resolusi: 12-bit (4095)
-
-</div>
-🧪 2. Filtering Pipeline
-| image           | ground_truth | prediction   | CER_formula           | CER_score |
-|-----------------|---------------|-------------|--------------------   |-----------|
-| test001_1.jpg	  | B9140BCD      | 9140        | CER = (0 + 4 + 0) / 8 |    0.5    |
-| test001_2.jpg   | B2407UZO      | B2407UZ     | CER = (0 + 1 + 0) / 8	|   0.125   |
