@@ -21,3 +21,24 @@ Pressure_System/
 └── /docs                 # (opsional) Dokumentasi tambahan / grafik pengujian
 
 ```
+
+## ⚙️ Komponen Sistem
+🧩 1. Sensor & ADC
+<div style="margin-left:20px">
+
+Sensor:
+• SEN0257 Water Pressure Sensor
+
+Pin Input:
+• PA2 (STM32 ADC)
+
+Konfigurasi ADC:
+• VREF: 3.2V
+• Resolusi: 12-bit (4095)
+
+</div>
+🧪 2. Filtering Pipeline
+Tahap	Fungsi
+ADC Averaging	Membaca sensor dengan rata-rata 16 sampel
+Kalman Filter	Mengurangi noise secara adaptif
+Moving Average	Menstabilkan output akhir
