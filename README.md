@@ -4,11 +4,20 @@
 ## 🧠 Deskripsi Singkat
 Sistem ini dirancang untuk membaca kedalaman AUV secara real-time menggunakan sensor tekanan SEN0257. Pembacaan sensor diproses melalui:
 ---
-- **ADC Averaging (noise reduction)
-- **Kalman Filter (filtering adaptif)
-- **Moving Average (smoothing tambahan)
-- **Zero Offset Calibration ('z')
-- **Konversi Tegangan → Tekanan → Kedalaman
-- **Koreksi Linear Regression (y = m·x + c) hasil kalibrasi offline
-- **Output akhir berupa kedalaman dalam cm, stabil dan siap digunakan untuk kontrol PID depth-hold.
+- ADC Averaging (noise reduction)
+- Kalman Filter (filtering adaptif)
+- Moving Average (smoothing tambahan)
+- Zero Offset Calibration ('z')
+- Konversi Tegangan → Tekanan → Kedalaman
+- Koreksi Linear Regression (y = m·x + c) hasil kalibrasi offline
+- Output akhir berupa kedalaman dalam cm, stabil dan siap digunakan untuk kontrol PID depth-hold.
 ---
+
+## 📁 Struktur Folder
+```
+Pressure_System/
+├── pressure_sensor.ino   # 🚀 Source code utama
+├── README.md             # 📘 Dokumentasi sistem
+└── /docs                 # (opsional) Dokumentasi tambahan / grafik pengujian
+
+```
